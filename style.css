@@ -1,0 +1,91 @@
+        body {
+            /* min-height: 100%; */
+            width: 100%;
+            background-color: rgb(33, 33, 86);
+            align-items: center;
+            justify-items: center;
+            justify-content: flex-end;
+            margin: auto;
+            padding: 20px 5px 20px 0px;
+            color: #ffffff;
+            background-position: center;
+            height: 100vh;
+        }
+        
+        #calculator-grid {
+            width: 205px;
+            background-color: rgb(37, 88, 199);
+            text-align: center;
+            margin: auto;
+            padding: 5px 5px 8px 5px;
+            border: 2px;
+            border-color: mediumblue;
+            border-radius: 5px;
+        }
+        
+        #display {
+            width: 96%;
+            height: 40px;
+            border-radius: 7px;
+            border-color: black;
+            margin: 20px 0px 20px 0px;
+            border-style: ridge;
+            background-color: rgb(72, 164, 181);
+            color: #ffffff;
+            line-height: 40px;
+            font-size: 29px;
+            text-align: right;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        button {
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 5px;
+            margin: 4px;
+            text-align: center;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: bold;
+        }
+        
+        button:hover {
+            background: peru;
+        }
+        
+        button:active {
+            transform: translateY(0.5em);
+        }
+        
+        .red {
+            background-color: darkred;
+        }
+        
+        .yellow {
+            background-color: goldenrod;
+        }
+        
+        .blue {
+            background-color: rgb(12, 12, 84);
+        }
+        
+        .teal {
+            background-color: rgb(72, 164, 181);
+        }
+        
+        .span-two {
+            background-color: darkgreen;
+            width: 90px;
+            border-color: black;
+            border-style: ridge;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                width: 100vw;
+                height: 100vh;
+                margin: auto;
+            }
+        }
