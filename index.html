@@ -5,37 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-    <div id="calculator-grid">
-        <div id="display"></div>
-        <div id="controls">
+    <main>
+        <a href=""></a>
+        <div id="calculator-grid">
+            <div id="display"></div>
+            <div id="controls">
+            </div>
+            <button class="red operator-btn" onclick="allClear()">AC</button>
+            <button class="red operator-btn" onclick="deleteDisplay">Del</button>
+            <button class="yellow operator-btn" onclick="appendToDisplay('.')">.</button>
+            <button class="yellow operator-btn" onclick="appendToDisplay('/')">/</button><br>
+            <button class="blue" value="7" onclick="appendToDisplay('7')">7</button>
+            <button class="blue" onclick=" appendToDisplay( '8') ">8</button>
+            <button class="blue " onclick="appendToDisplay('9')">9</button>
+            <button class="yellow operator-btn" onclick=" appendToDisplay( '*') ">*</button><br>
+            <button class="blue " onclick="appendToDisplay('4')">4</button>
+            <button class="blue " onclick="appendToDisplay('5')">5</button>
+            <button class="blue " onclick="appendToDisplay('6')">6</button>
+            <button class="yellow operator-btn" onclick="appendToDisplay('-')">-</button><br>
+            <button class="blue " onclick="appendToDisplay('1')">1</button>
+            <button class="blue " onclick="appendToDisplay('2')">2</button>
+            <button class="blue " onclick="appendToDisplay('3')">3</button>
+            <button class="yellow operator-btn" onclick="appendToDisplay('+')">+</button><br>
+            <button class="teal " onclick="appendToDisplay('00')">00</button>
+            <button class="teal " onclick="appendToDisplay('0')">0</button>
+            <button class="span-two" onclick="calculate() ">=</button>
         </div>
-        <button class="red operator-btn" onclick="allClear()">AC</button>
-        <button class="red operator-btn" onclick="deleteDisplay">Del</button>
-        <button class="yellow operator-btn" onclick="appendToDisplay('.')">.</button>
-        <button class="yellow operator-btn" onclick="appendToDisplay('/')">/</button><br>
-        <button class="blue" value="7" onclick="appendToDisplay('7')">7</button>
-        <button class="blue" onclick=" appendToDisplay( '8') ">8</button>
-        <button class="blue " onclick="appendToDisplay('9')">9</button>
-        <button class="yellow operator-btn" onclick=" appendToDisplay( '*') ">*</button><br>
-        <button class="blue " onclick="appendToDisplay('4')">4</button>
-        <button class="blue " onclick="appendToDisplay('5')">5</button>
-        <button class="blue " onclick="appendToDisplay('6')">6</button>
-        <button class="yellow operator-btn" onclick="appendToDisplay('-')">-</button><br>
-        <button class="blue " onclick="appendToDisplay('1')">1</button>
-        <button class="blue " onclick="appendToDisplay('2')">2</button>
-        <button class="blue " onclick="appendToDisplay('3')">3</button>
-        <button class="yellow operator-btn" onclick="appendToDisplay('+')">+</button><br>
-        <button class="teal " onclick="appendToDisplay('00')">00</button>
-        <button class="teal " onclick="appendToDisplay('0')">0</button>
-        <button class="span-two" onclick="calculate() ">=</button>
-    </div>
 
-    <script src="index.js "></script>
+        <script src="index.js "></script>
+    </main>
 </body>
 
 </html
